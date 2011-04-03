@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Inverter String</title>
+</head>
+
+<body>
+
+
+<script>
+
+String.prototype.reverse = function(){	
+	var str = this.split("");
+	return str.reverse().join("");
+}
+var abc = "teste \nTeste\tTeste\\nMais Teste";
+
+	document.write(abc.reverse());
+
+</script>
+</body>
+</html>
