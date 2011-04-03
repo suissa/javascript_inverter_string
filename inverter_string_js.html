@@ -12,17 +12,15 @@
 <script>
 
 String.prototype.reverse = function(){	
-	var teste = this.split("");
-	return teste.reverse().join("");
+	var str = this.split("");
+	return str.reverse().join("");
 }
 
 var btn = document.getElementById('btn_inverter');
+
 btn.onclick = function(){
-	//alert('alooo');
-	var url_entrada = document.getElementById('url_entrada').value;
-	var url_saida = document.getElementById('url_saida').value;
-	//var teste = "abcde";
-	document.write(url_entrada.reverse());
+	var str = document.getElementById('entrada').value;
+	document.write(str.reverse());
 	};
 	
 </script>
