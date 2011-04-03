@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Inverter String</title>
+</head>
+
+<body>
+<input type="text" id="entrada" placeholder="string para inverter" size="100" maxlength="500" width="400">
+<input type="button" value="inverter" id="btn_inverter">
+
+<script>
+
+String.prototype.reverse = function(){	
+	var teste = this.split("");
+	return teste.reverse().join("");
+}
+
+var btn = document.getElementById('btn_inverter');
+btn.onclick = function(){
+	//alert('alooo');
+	var url_entrada = document.getElementById('url_entrada').value;
+	var url_saida = document.getElementById('url_saida').value;
+	//var teste = "abcde";
+	document.write(url_entrada.reverse());
+	};
+	
+</script>
+</body>
+</html>
